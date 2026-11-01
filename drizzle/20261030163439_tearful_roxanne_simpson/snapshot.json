@@ -1,0 +1,147 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "e23579be-369b-4b82-9944-2b059198aa23",
+  "prevIds": [
+    "f9bd7a25-a498-4337-b118-bb14dc01a7a5"
+  ],
+  "footprints": [
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "workouts",
+        "started_at"
+      ],
+      "writes": [
+        "s|col|public.workouts.started_at",
+        "n|col|public.workouts.started_at",
+        "e|col|public.workouts.started_at"
+      ],
+      "reads": [
+        "n|tbl|public.workouts",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "workouts",
+        "completed_at"
+      ],
+      "writes": [
+        "s|col|public.workouts.completed_at",
+        "n|col|public.workouts.completed_at",
+        "e|col|public.workouts.completed_at"
+      ],
+      "reads": [
+        "n|tbl|public.workouts",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "drop_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "workouts",
+        "notes"
+      ],
+      "writes": [
+        "s|col|public.workouts.notes",
+        "n|col|public.workouts.notes",
+        "e|col|public.workouts.notes"
+      ],
+      "reads": [
+        "n|tbl|public.workouts",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "drop_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "sets",
+        "duration_seconds"
+      ],
+      "writes": [
+        "s|col|public.sets.duration_seconds",
+        "n|col|public.sets.duration_seconds",
+        "e|col|public.sets.duration_seconds"
+      ],
+      "reads": [
+        "n|tbl|public.sets",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "drop_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "sets",
+        "notes"
+      ],
+      "writes": [
+        "s|col|public.sets.notes",
+        "n|col|public.sets.notes",
+        "e|col|public.sets.notes"
+      ],
+      "reads": [
+        "n|tbl|public.sets",
+        "n|sch|public"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "workouts",
+        "name": "started_at",
+        "type": "timestamp",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "workouts",
+        "name": "completed_at",
+        "type": "timestamp",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "drop",
+      "key": "columns\u0000[\"public\",\"sets\",\"duration_seconds\"]"
+    },
+    {
+      "op": "drop",
+      "key": "columns\u0000[\"public\",\"sets\",\"notes\"]"
+    },
+    {
+      "op": "drop",
+      "key": "columns\u0000[\"public\",\"workouts\",\"notes\"]"
+    }
+  ]
+}
