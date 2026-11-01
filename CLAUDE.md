@@ -2,6 +2,16 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Project Standards — Read First
+
+**Before generating any code, always check the `/docs` directory for a relevant standards file and follow it.**
+
+| Area | Doc |
+|------|-----|
+| UI / components / date formatting | `docs/ui.md` |
+
+If a `/docs` file covers the area you are working in, its rules take precedence over general defaults.
+
 
 ## Warning: Non-standard Next.js version
 
