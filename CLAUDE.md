@@ -9,6 +9,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | Area | Doc |
 |------|-----|
 | UI / components / date formatting | `docs/ui.md` |
+| Data fetching / database queries   | `docs/data-fetching.md` |
+
+To ensure claude uses our documents we have created so far, let add the ff into the CLAUDE.md file
+
+
 
 If a `/docs` file covers the area you are working in, its rules take precedence over general defaults.
 
